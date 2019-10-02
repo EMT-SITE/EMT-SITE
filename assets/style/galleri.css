@@ -1,0 +1,55 @@
+
+
+.photo-thumbnail {
+    max-width: 960px; width: 100%;
+}
+
+.photo-champions {
+    max-width: 960px; width: 100%;
+}
+
+.photo-italycrew {
+    max-width: 960px; width: 100%;
+}
+
+.photo-glory {
+    max-width: 960px; width: 100%;
+}
+
+.photo-dmkick {
+    max-width: 960px; width: 100%;
+}
+
+.photo-emil {
+    max-width: 960px; width: 100%;
+}
+
+.photo-title {
+    max-width: 960px; width: 100%;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 0 30px;
+    width: 100%;
+    color: #ffffff;
+    z-index: 20;
+    height: 300px;
+    width: 100%;
+    background-color: black;
+  }
+
+  .foelg-os {
+    font-family: 'Permanent Marker', cursive;
+    color: coral;
+    margin: 0 0 0 10px;
+  }
+
+  .footer-name {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 20px;
+    color: coral;
+  }
+  
