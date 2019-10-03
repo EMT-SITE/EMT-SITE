@@ -1,21 +1,20 @@
 html{
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
   background-color: rgb(171, 184, 149);
 }
 
 body {
-  font-family: 'Lato', sans-serif;
-  margin: 0 auto 0 auto;
-  
+  font-family: 'Lato', sans-serif;  
 }
 
 .body-wrapper {
-  max-width: 960px; width: 100%;
-  margin: 0 auto;
+  width: 100%;
 }
 
 main {
   padding-top: 155px;
-  margin-left: 70px;
 }
 
 .fas {
@@ -24,17 +23,22 @@ main {
 }
 
 .photo-one {
-  max-width: 960px; width: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 51px -2px rgba(62, 76, 88, 0.75);
 }
 
 .opv-img {
-  opacity: 0.8;
-  max-width: 960px; width: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 51px -2px rgba(62, 76, 88, 0.75);
 }
 
 .map-img {
   margin: 55px 0 55px 0;
-  max-width: 960px; width: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 51px -2px rgba(62, 76, 88, 0.75);
 }
 
 
@@ -46,18 +50,26 @@ main {
 
 header {
     position: fixed;
+    top: 0;
     background-color: white;
     z-index: 10;
-    max-width: 960px; width: 100%;
+    width: 100vw;
+    transform: translateX(-50%);
+    left: 50%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    box-sizing: border-box;
 }
 
+
 .info-wrapper {
-  max-width: 960px; width: 100%;
+  width: 100%;
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
 
 .fas {
   font-size: 150px;
@@ -66,7 +78,7 @@ header {
 }
 
 .sign-up-wrapper {
-  max-width: 960px; width: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -74,7 +86,7 @@ header {
 }
 
 .map-wrapper {
-  max-width: 960px; width: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -108,14 +120,14 @@ h3 {
     font-family: 'Permanent Marker', cursive;
     font-size: 50px;
     color: #818181;
-    max-width: 960px; width: 100%;
+    width: 100%;
     text-align: center;
 }
 
 .logo-two {
   font-family: 'Permanent Marker', cursive;
   font-size: 50px;
-  max-width: 960px; width: 100%;
+  width: 100%;
   color: #818181;
   text-align: center;
 }
@@ -123,15 +135,16 @@ h3 {
 .logo-three {
   font-family: 'Permanent Marker', cursive;
   font-size: 50px;
-  max-width: 960px; width: 100%;
+  width: 100%;
   color: #818181;
   text-align: center;
 }
 
 .section-one-wrapper {
+    width: 95%;
+    margin: auto; 
     opacity: 0.8;
     color: #818181;
-    max-width: 960px; width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -141,13 +154,13 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  padding: 0 30px;
-  width: 100%;
+  padding: 0 3%;
   color: #ffffff;
   z-index: 20;
   height: 300px;
   width: 100%;
   background-color: black;
+  box-sizing: border-box;
 }
 
 .foelg-os {
@@ -157,12 +170,13 @@ footer {
 }
 
 .footer-copy-right {
-  grid-column: 2 / 3;
+  grid-column: 1 / 5;
   grid-row: 3 / 4;
   display: flex;
   justify-content: center;
   align-self: flex-end;
-  font-size: small;
+  font-size: 12px;
+  color: #818181;
 }
 
 .footer-name {
@@ -173,7 +187,7 @@ footer {
 
   
   .overlay {
-    height: 100%;
+    height: 100vh;
     width: 0;
     position: fixed;
     z-index: 1;
@@ -183,6 +197,7 @@ footer {
     background-color: rgba(0,0,0, 0.9);
     overflow-x: hidden;
     transition: 0.5s;
+    
   }
   
   .overlay-content {
@@ -222,7 +237,7 @@ footer {
     grid-column: 3 / 4;
     grid-row: 1 / 2;
     font-size: 50px;
-    margin-left: auto;
+    margin: auto;
   }
 
   .somelogo__fb {
@@ -236,11 +251,11 @@ footer {
   
   .main-rightwrapper__sign-up-wrapper {
     grid-column: 2 / 3;
-    max-width: 960px;
     width: 100%;
     background-color: white;
     margin-left: inherit;
     margin-top: 50px;
+    box-sizing: border-box;
 }
 
 .main-rightwrapper__sign-up-text {
@@ -254,6 +269,7 @@ footer {
     display: flex;
     flex-direction: column;
     padding: 20px 20px 0 20px;
+    box-sizing: border-box;
     -webkit-box-shadow: 0px 0px 51px -2px rgba(62, 76, 88, 0.75);
     -moz-box-shadow: 0px 0px 51px -2px rgba(62, 76, 88, 0.75);
     box-shadow: 0px 0px 51px -2px rgba(62, 76, 88, 0.75);
@@ -282,29 +298,53 @@ footer {
   display: none;
 }
 
+
+
 /* .overlay {
   display: none;
 } */
-  @media screen and (max-height: 450px) {
+  @media screen and (max-width: 768px) {
     .overlay a {font-size: 20px}
     .overlay .closebtn {
     font-size: 40px;
     top: 15px;
     right: 35px;
     }
+
+  
   }
 
-  @media screen and (min-width: 768px){
+  @media screen and (min-width: 769px){
   .menu-desktop {
   position: fixed;
   background-color: white;
   z-index: 10;
-  max-width: 960px; width: 100%;
+  width: 100%;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
+
+
+  }
+
+  @media screen and (max-width: 1099px){
+    .header-intial {
+      display: none;
+      }
+  }
+
+  @media screen and (min-width: 1100px){
+
+    .header-intial {
+      margin: 0;
+      font-size: 75px;
+      color: coral;
+      font-family: auto;
+      text-shadow: 2px 2px 8px rgb(171, 184, 149) ;
+    }
   }
 
 
