@@ -10,7 +10,7 @@ function openNav() {
   }
 
 //json fetch
-  const testone = fetch('./assets/json/index.json')
+/*   const testone = fetch('./assets/json/index.json')
   .then(function(response){
       return response.json();
   })
@@ -24,7 +24,7 @@ function openNav() {
     </section>
     `
 
-  });
+  }); */
 
   
 });
