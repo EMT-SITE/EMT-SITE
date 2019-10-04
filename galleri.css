@@ -1,0 +1,105 @@
+html{
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+   /*  background-color: rgb(171, 184, 149); */
+    background-color: black;
+  
+  }
+
+.photo-thumbnail {
+    width: 100%;
+    box-shadow: 0px 0px 51px -2px rgba(62, 76, 88, 0.75);
+}
+
+.photo-champions {
+    width: 100%;
+    box-shadow: 0px 0px 51px -2px rgba(62, 76, 88, 0.75);
+}
+
+.photo-italycrew {
+    width: 100%;
+    box-shadow: 0px 0px 51px -2px rgba(62, 76, 88, 0.75);
+}
+
+.photo-glory {
+    width: 100%;
+    box-shadow: 0px 0px 51px -2px rgba(62, 76, 88, 0.75);
+}
+
+.photo-dmkick {
+    width: 100%;
+    box-shadow: 0px 0px 51px -2px rgba(62, 76, 88, 0.75);
+}
+
+.photo-emil {
+    width: 100%;
+    box-shadow: 0px 0px 51px -2px rgba(62, 76, 88, 0.75);
+}
+
+.photo-title {
+    width: 100%;
+    box-shadow: 0px 0px 51px -2px rgba(62, 76, 88, 0.75);
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 0 30px;
+    width: 100%;
+    color: #ffffff;
+    z-index: 20;
+    height: 300px;
+    width: 100%;
+    background-color: black;
+    margin: 10px 0;
+  }
+
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    opacity: 0;
+  }
+
+  .visible {
+    opacity: 1;
+    transition: all 300ms ease;
+    transition-delay: 0.3s;
+   
+  }
+
+  .foelg-os {
+    font-family: 'Permanent Marker', cursive;
+    color: coral;
+    margin: 0 0 0 10px;
+  }
+
+  .name {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 20px;
+    color: coral;
+  }
+
+  @media screen and (max-width: 1099px){
+    .header-intial {
+      display: none;
+      }
+  }
+
+  @media screen and (min-width: 1100px){
+
+    .header-intial {
+      margin: 0;
+      font-size: 75px;
+      color: coral;
+      font-family: auto;
+     /*  text-shadow: 2px 2px 8px rgb(171, 184, 149) ; */
+    }
+  }
+
+
+  

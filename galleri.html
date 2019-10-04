@@ -8,15 +8,16 @@
     <script src="https://kit.fontawesome.com/e69d4df5bb.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/style/galleri.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <title>EXTREME MUAY THAI</title>
 </head>
 <body>
     <div class="body-wrapper">
     <header>
             <img class="emt-logo" src="./assets/img/emt logo.jpg" alt="">
-            <p class="header-intial">EXTREME MUAY THAI</p>
+            <p class="header-intial">E.M.T</p>
                 <div class="menu-btn">
-                    <span class="menu-btn" style="font-size:50px;cursor:pointer" onclick="openNav()">&#9776;MENU</span>
+                    <span class="menu-btn" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;MENU</span>
                 </div>
                 <div id="myNav" class="overlay">
                     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -32,17 +33,26 @@
     </header>
 
     <main>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <img src="./assets/img/danielDM.jpg" class="swiper-slide"></img>
+                <img src="./assets/img/kidsteam.jpg" class="swiper-slide"></img>
+                <img src="./assets/img/mikkelchillin.jpg" class="swiper-slide"></img>
+                ...
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+
+
+
         <section class="section-one-wrapper">
                 <h2 class="logo-one">German Open Championship</h2>
                 <p>Tyskland | Hamborg</p>
             <img class="photo-champions" src="./assets/img/champions.jpg" alt="">
         </section>
-        <!-- <section class="info-wrapper">
-        <div class="info-container">
-            <i class="fas fa-fire-alt"></i>
-            <p class="info-text">EXTREME MUAY THAI <br> THAIBOKSNING - KICKBOXING - BOXING <br>E.M.T er en kampsports klub hvor der undervises i thaiboxing, kickboxing og boxing beligende i Køge. Klubben har eksisteret siden 2012 og er bestyret af Jesper Dabelsten og fem andre bestyrelses medlemmer. Klubben er for alle, vi har profesionelle kæmpere, amatør kæmpere samt begyndere og motionister i alle aldre. Træningen bliver undervist af vores dygtige og erfarne trænere. I klubben har vi et super godt fællelsskab hvor der netop er plads til alle. Om man har planer om at konkurrer eller om man bare vil have noget god motions træning, så er E.M.T stedet at være. Klubben har igennem dens levetid deltaget til utallige stævner og events og har flere Champions der har vundet flotte titler for klubben. </p>
-        </div>
-         </section> -->
+        
          <section class="section-one-wrapper">
                 <h2 class="logo-one">K-1 World Championship</h2>
                 <p>Italien | Firenze</p>
@@ -112,5 +122,30 @@
           document.getElementById("myNav").style.width = "0%";
         }
         </script>
+          <script src="./assets/js/index.js"></script>
+          <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+          <script>
+                  var mySwiper = new Swiper ('.swiper-container', {
+                    // Optional parameters
+                    direction: 'horizontal',
+                    loop: true,
+                
+                    // If we need pagination
+                    pagination: {
+                      el: '.swiper-pagination',
+                    },
+                
+                    // Navigation arrows
+                    navigation: {
+                      nextEl: '.swiper-button-next',
+                      prevEl: '.swiper-button-prev',
+                    },
+                
+                    // And if we need scrollbar
+                    scrollbar: {
+                      el: '.swiper-scrollbar',
+                    },
+                  })
+                  </script>
 </body>
 </html>
