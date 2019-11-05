@@ -1,30 +1,33 @@
 document.addEventListener('DOMContentLoaded', function (){
 
-//Open nav and close nav
+  let menubtn = document.querySelector('.menu-btn')
+  let closeButton = document.querySelector('.closebtn')
+
+  let inputBtn = document.querySelector('.main-rightwrapper__btn')
+  console.log(inputBtn);
+
+
+  console.log(menubtn);
+  menubtn.addEventListener('click', openNav);
+  closeButton.addEventListener('click', closeNav);
+  //Open nav and close nav
 function openNav() {
-    document.getElementById("myNav").style.width = "100%";
+  console.log('yay');
+    let ert = document.querySelector('.overlay-content')
+   console.log(ert);
+   
+   document.getElementById("myNav").style.width = "100%";
+   
+    document.querySelector('.overlay-content').classList.add('visible');
   }
   
   function closeNav() {
+    document.querySelector('.overlay-content').classList.remove('visible');
     document.getElementById("myNav").style.width = "0%";
   }
 
-//json fetch
-/*   const testone = fetch('./assets/json/index.json')
-  .then(function(response){
-      return response.json();
-  })
-  .then(function(result){
 
-    document.querySelector('.section-one-wrapper').innerHTML = `
-    
-    <section class="section-one-wrapper">
-      <img src="${result.img}""./assets/img/one.jpg" alt="">
-      <h2 class="logo-one">${result.logo}</h2>
-    </section>
-    `
 
-  }); */
 
   
 });

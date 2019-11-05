@@ -1,33 +1,34 @@
-html{
+ html{
   padding: 0;
-  margin: 0;
   max-width: 100%;
-  background-color: rgb(171, 184, 149);
+  /* background-color: rgb(171, 184, 149); */
+  background-color: black;
 }
 
 body {
+  margin: 0;
   font-family: 'Lato', sans-serif;  
 }
 
-.body-wrapper {
+/* .body-wrapper {
   width: 100%;
 }
+ */
 
-main {
+ main {
   padding-top: 155px;
 }
 
-.fas {
+/* .fas {
     font-size: 50px;
-
-}
+} */
 
 .photo-one {
   width: 100%;
   box-sizing: border-box;
   box-shadow: 0px 0px 51px -2px rgba(62, 76, 88, 0.75);
 }
-
+ 
 .opv-img {
   width: 100%;
   box-sizing: border-box;
@@ -42,13 +43,15 @@ main {
 }
 
 
+
+
 .info-container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-header {
+ header {
     position: fixed;
     top: 0;
     background-color: white;
@@ -63,13 +66,13 @@ header {
 }
 
 
-.info-wrapper {
+/* .info-wrapper {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
+ */
 
 .fas {
   font-size: 150px;
@@ -86,16 +89,16 @@ header {
 }
 
 .map-wrapper {
-  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-
+/* 
 h3 {
   font-size: 40px;
 }
+ */
 
 .info-text {
   font-family: 'Lato', sans-serif;
@@ -108,14 +111,15 @@ h3 {
   width: 100px;
 }
 
-.emt-logo-footer {
+/* .emt-logo-footer {
   grid-column: 3 / 4;
   grid-row: 2 / 3;
   width: 150px;
   display: flex;
   justify-self: end;
   align-self: flex-end;
-}
+} */
+
 .logo-one {
     font-family: 'Permanent Marker', cursive;
     font-size: 50px;
@@ -123,6 +127,15 @@ h3 {
     width: 100%;
     text-align: center;
 }
+
+/* .logo-one-logo {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+    color: black;
+    text-shadow: 2px 2px 8px #818181;
+    width: 100%;
+    text-align: center;
+} */
 
 .logo-two {
   font-family: 'Permanent Marker', cursive;
@@ -206,6 +219,14 @@ footer {
     width: 100%;
     text-align: center;
     margin-top: 30px;
+    opacity: 0;
+  }
+
+  .visible {
+    opacity: 1;
+    transition: all 300ms ease;
+    transition-delay: 0.3s;
+   
   }
   
   .overlay a {
@@ -230,7 +251,7 @@ footer {
 
   p {
     font-family: 'Lato', sans-serif; 
-    font-size: 15px; 
+    font-size: 25px; 
   }
 
   .somelogo {
@@ -242,7 +263,7 @@ footer {
 
   .somelogo__fb {
     text-decoration: none;
-    color: #818181;
+    color: #818181; 
   }
   .somelogo__insta {
     text-decoration: none;
@@ -293,16 +314,21 @@ footer {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.swiper-container {
+  width: 600px;
+  height: 300px;
+}
+
 
 .menu-desktop {
   display: none;
 }
 
-
-
-/* .overlay {
+/* 
+ .overlay {
   display: none;
-} */
+}  */
+
   @media screen and (max-width: 768px) {
     .overlay a {font-size: 20px}
     .overlay .closebtn {
@@ -326,6 +352,15 @@ footer {
   justify-content: space-between;
 }
 
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
 
 
   }
@@ -343,8 +378,27 @@ footer {
       font-size: 75px;
       color: coral;
       font-family: auto;
-      text-shadow: 2px 2px 8px rgb(171, 184, 149) ;
+      transition: 0.2s;
+     
+     /*  text-shadow: 2px 2px 8px rgb(171, 184, 149) ; */
     }
   }
+
+  @media screen and (min-width: 376px){
+    .mapouter .gmap_canvas {
+      max-width: 100%;
+    }
+
+    .map-wrapper {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+
+
 
 

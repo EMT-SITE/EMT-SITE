@@ -2,41 +2,51 @@ html{
     padding: 0;
     margin: 0;
     max-width: 100%;
-    background-color: rgb(171, 184, 149);
+   /*  background-color: rgb(171, 184, 149); */
+    background-color: black;
+  
+  }
+
+  p {
+    color: gray;
+    font-family: 'Lato', sans-serif;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
   }
 
 .photo-thumbnail {
-    max-width: 960px; width: 100%;
+    width: 100%;
     box-shadow: 0px 0px 51px -2px rgba(62, 76, 88, 0.75);
 }
 
 .photo-champions {
-    max-width: 960px; width: 100%;
+    width: 100%;
     box-shadow: 0px 0px 51px -2px rgba(62, 76, 88, 0.75);
 }
 
 .photo-italycrew {
-    max-width: 960px; width: 100%;
+    width: 100%;
     box-shadow: 0px 0px 51px -2px rgba(62, 76, 88, 0.75);
 }
 
 .photo-glory {
-    max-width: 960px; width: 100%;
+    width: 100%;
     box-shadow: 0px 0px 51px -2px rgba(62, 76, 88, 0.75);
 }
 
 .photo-dmkick {
-    max-width: 960px; width: 100%;
+    width: 100%;
     box-shadow: 0px 0px 51px -2px rgba(62, 76, 88, 0.75);
 }
 
 .photo-emil {
-    max-width: 960px; width: 100%;
+    width: 100%;
     box-shadow: 0px 0px 51px -2px rgba(62, 76, 88, 0.75);
 }
 
 .photo-title {
-    max-width: 960px; width: 100%;
+    width: 100%;
     box-shadow: 0px 0px 51px -2px rgba(62, 76, 88, 0.75);
 }
 
@@ -54,13 +64,34 @@ footer {
     margin: 10px 0;
   }
 
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    opacity: 0;
+  }
+
+  .visible {
+    opacity: 1;
+    transition: all 300ms ease;
+    transition-delay: 0.3s;
+   
+  }
+
   .foelg-os {
     font-family: 'Permanent Marker', cursive;
     color: coral;
     margin: 0 0 0 10px;
   }
 
-  .footer-name {
+  .swiper-container {
+    max-width: 375px;
+  }
+
+
+  .name {
     font-family: 'Permanent Marker', cursive;
     font-size: 20px;
     color: coral;
@@ -79,7 +110,7 @@ footer {
       font-size: 75px;
       color: coral;
       font-family: auto;
-      text-shadow: 2px 2px 8px rgb(171, 184, 149) ;
+     /*  text-shadow: 2px 2px 8px rgb(171, 184, 149) ; */
     }
   }
 
